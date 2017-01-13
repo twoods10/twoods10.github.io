@@ -1,0 +1,188 @@
+/*Base Styles*/
+
+body {
+	font-family: 'Cantarell', sans-serif;
+	color: #555;
+	line-height: 1.6;
+}
+.hamburger {
+	cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 27px;
+    color: white;
+}
+/*.search {
+	background-image: url("../images/planner.jpg");
+	background-width: 100%;
+}*/
+/*Responsive Images*/
+img {
+	max-width: 100%; 
+	margin: -20px auto;
+	margin-top: 25px;
+	margin-bottom: -55px;
+}
+article img {
+	margin: 0 auto;
+}
+
+
+/*Typography */
+h2 {
+	text-align: center;	
+}
+.how_to {
+	margin-top: 40px;
+}
+h3 article {
+	text-align: center;
+}
+p {
+	font-family: 'Fjalla+One', sans-serif;
+	display: none;
+}
+/*Lists*/
+nav ul {
+	margin: 0;
+}
+aside ul {
+	text-align: center;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+li 
+	{
+	display: inline-block;
+	padding: 20px;
+	}
+aside li {
+	display: list-item;
+	padding: 20px; /*Sarah- how do I add/customize bullet points?*/
+}
+li a {
+	color: white;
+	font-size: 18px;
+	transition: .5s;
+}
+a:hover {
+	background-color: white;
+	color: #555;
+}
+/*Layout*/
+nav {
+	text-align: center;
+	background-color: #105B63;
+	position: fixed; 
+	top: 0;
+  	left: 0;
+  	right: 0;
+  	z-index: 100;
+}
+.sidebar {
+	transform: translateX(-100%);
+	transition: all .5s ease-in-out;
+	width: 20%;
+	height: 100%;
+	
+}
+.sidebar li {
+	display: block;
+	text-align: left;
+	padding: 0;
+}
+.active {
+	transform: translateX(0);
+}
+.subject {
+	display: none; 
+}
+.third_math {
+	display: none;
+	margin-left: 30px;
+}
+.third_ELA {
+	display: none;
+	margin-left: 30px;
+}
+.display {
+	display: inline-block;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  text-transform: none;
+  font-size: 20px;
+  margin-top: 50px;
+  color: white;
+  text-decoration: none;
+}
+section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+/*.hideme {
+	opacity: 0;
+}*/ /*I added this clase so that i could fade in the section*/
+div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+div article {
+	width: 60%;
+}
+.why {
+	margin-right: -170px;
+}
+aside {
+	width: 35%;
+}
+aside ul {
+	margin-top: 120px;
+}
+article {
+	width: 30%;
+}
+/*Header*/
+header {
+	
+	/*position: relative*/
+}
+/*Footer*/
+footer {
+	background-color: #105B63;
+	padding: 40px 0px;
+	margin-top: 30px;
+}
+/*Buttons*/
+button {
+	border: black solid 2px; 
+}
+/*Forms*/
+form {
+	text-align: center;
+}
+
+input {
+	width: 50%;
+	padding: 8px 5px;
+	margin-right: 30px;
+	font-size: 16px;
+}
+
+footer input {
+	width: 30%;
+}
+footer {
+	display: block;
+	text-align: center;
+}
