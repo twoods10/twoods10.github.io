@@ -1,10 +1,10 @@
 $(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 600;             // set to whatever you want it to be
+    var scroll_pos_test = 250;             // set to whatever you want it to be
 
     if(y_scroll_pos > scroll_pos_test) {
         $('#steps').addClass('afterScroll');//do stuff
-
+        $('#order_1, #order_2, #order_3').addClass('flip');
     }
 });
 
