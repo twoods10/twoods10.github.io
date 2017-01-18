@@ -1,3 +1,13 @@
+$(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 600;             // set to whatever you want it to be
+
+    if(y_scroll_pos > scroll_pos_test) {
+        $('#steps').addClass('afterScroll');//do stuff
+
+    }
+});
+
 $('.hamburger').on('click', function (e) {
 	e.preventDefault();
 
@@ -43,9 +53,9 @@ $('.ELA').on('click', function (e) {
     
 });
 
-$('h3').on('mouseenter', function () {
-	$('p').fadeIn(300);
-})
+// $('h3').on('mouseenter', function () {
+// 	$('p').fadeIn(300);
+// })
 
 
 
