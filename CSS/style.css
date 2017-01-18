@@ -37,7 +37,7 @@ h2 {
 .how_to {
 	margin-top: 40px;
 }
-h3 article {
+h3 {
 	text-align: center;
 }
 p {
@@ -131,16 +131,27 @@ section {
 	width: 100%;
 /*	display: none;*/
 	opacity: 0;
-	transition: opacity 5s ease-in-out;
+	transition: all .7s ease-in-out;
+	
 }
 .afterScroll {
 	width: 100%;
 	display: flex;
 	opacity: 1;
 }
-/*.hideme {
-	opacity: 0;
-}*/ /*I added this clase so that i could fade in the section*/
+#order_1 {
+	transition: all 1s ease-in-out;
+}
+#order_2 {
+	transition: all 2s ease-in-out;
+}
+#order_3 {
+	transition: all 3s ease-in-out;
+}
+.flip {
+	transform: rotateX(360deg);
+}
+
 div {
 	display: flex;
 	flex-direction: row;
